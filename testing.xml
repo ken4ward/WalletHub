@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Facebook Post" verbose="1">
+	<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+    <test name="TestNG Grid">
+        <classes>
+        <class name="facebook.functional.runner.FacebookRunner"/>
+        </classes>
+    </test>
+</suite>
